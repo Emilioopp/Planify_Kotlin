@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/layoutSesiones"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".SesionesActivity">
+    android:padding="16dp">
 
     <TextView
+        android:id="@+id/tvTituloSesiones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pantalla de Sesiones de Estudio"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+        android:text="Sesiones de hoy"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSesiones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnAgregarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar sesión"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:id="@+id/btnVerProximas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sesiones próximas"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#64B5F6"
+        android:textColor="#FFFFFF"/>
+
 
 </LinearLayout>
