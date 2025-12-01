@@ -14,9 +14,30 @@
         android:padding="4dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tvBuscarPorFecha"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sesiones próximas"
+        android:text="Buscar sesión por fecha"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnSeleccionarFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar fecha…"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Sesiones próximas"
+        android:gravity="center"
         android:textStyle="bold"
         android:textSize="20sp"
         android:layout_marginBottom="12dp" />

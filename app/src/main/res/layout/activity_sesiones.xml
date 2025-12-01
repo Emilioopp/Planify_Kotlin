@@ -8,10 +8,11 @@
 
     <TextView
         android:id="@+id/tvTituloSesiones"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sesiones de hoy"
+        android:text="Lista de Sesiones de hoy"
         android:textSize="20sp"
+        android:gravity="center"
         android:textStyle="bold"
         android:layout_marginBottom="12dp" />
 
@@ -37,6 +38,5 @@
         android:layout_marginTop="12dp"
         android:backgroundTint="#64B5F6"
         android:textColor="#FFFFFF"/>
-
 
 </LinearLayout>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,24 +11,35 @@
         android:supportsRtl="true"
         android:name=".PlanifyApp"
         android:theme="@style/Theme.Planify">
+
+        <!-- Evaluaciones -->
         <activity
-            android:name=".SesionesProximasActivity"
+            android:name=".ui.evaluaciones.EvaluacionesActivity" />
+        <activity
+            android:name=".ui.evaluaciones.AgregarEvaluacionActivity" />
+        <activity
+            android:name=".ui.evaluaciones.DetalleEvaluacionActivity" />
+
+        <!-- Sesiones -->
+        <activity
+            android:name=".ui.sesiones.SesionesProximasActivity"
             android:exported="false" />
-        <activity android:name=".DetalleSesionActivity" />
         <activity
-            android:name=".AgregarSesionActivity"
+            android:name=".ui.sesiones.DetalleSesionActivity" />
+        <activity
+            android:name=".ui.sesiones.AgregarSesionActivity"
             android:exported="false" />
         <activity
-            android:name=".SesionesActivity"
+            android:name=".ui.sesiones.SesionesActivity"
             android:exported="false" />
+
+        <!-- MainActivity -->
         <activity
-            android:name=".EvaluacionesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Planify">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

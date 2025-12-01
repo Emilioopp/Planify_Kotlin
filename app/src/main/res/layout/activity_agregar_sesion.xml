@@ -10,11 +10,13 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tvTituloForm"
             android:text="Agregar nueva sesión"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_marginBottom="20dp" />
 
         <TextView
@@ -36,7 +38,7 @@
             android:layout_marginBottom="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <EditText
+        <Button
             android:id="@+id/etFecha"
             android:hint="Seleccionar fecha"
             android:focusable="false"
@@ -50,7 +52,7 @@
             android:layout_marginBottom="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <EditText
+        <Button
             android:id="@+id/etHora"
             android:hint="Seleccionar hora"
             android:focusable="false"

@@ -3,21 +3,38 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="12dp">
+    android:padding="12dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_item_sesion"
+    android:gravity="center_horizontal">
 
     <TextView
-        android:id="@+id/txtNombreSesionProxima"
+        android:id="@+id/tvNombreSesionProxima"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre"
+        android:text="Nombre sesión"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvFechaSesionProxima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/12/2025"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="4dp" />
 
     <TextView
-        android:id="@+id/txtInfoSesionProxima"
+        android:id="@+id/tvInfoSesionProxima"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Duración: 45 min — 17:00 hrs"
-        android:textSize="14sp"
-        android:layout_marginTop="4dp"/>
+        android:text="Duración: 60 min - 10:30 hrs"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
 </LinearLayout>
